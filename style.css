@@ -1,0 +1,150 @@
+/* UA resets */
+
+html, body, h1, h2, p, ul, li, figure {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+div, ul, li {
+    box-sizing: border-box;
+}
+
+li {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* Typography */
+
+h1, h2 {
+    font-size: inherit;
+    font-weight: inherit;
+}
+
+/* Layouts */
+
+.wrapper {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+/* Components */
+
+body {
+    background: #111;
+    color: white;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    padding: 4rem 0 2rem;
+    border-bottom: 3px solid #000;
+}
+
+.header-profile {
+    width: 5rem;
+    height: 5rem;
+    border-radius: 4px 20% 20% 4px;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
+}
+
+.header-meta {
+    padding: 0 1.8em;
+}
+
+.header-meta h1 {
+    font-size: 1.8rem;
+    font-family: 'Black Han Sans', sans-serif;
+    margin-bottom: 0.3em;
+    line-height: 1;
+}
+
+.header-meta h1 span {
+    color: #ADFF2E;
+}
+
+.header-meta p {
+    font-weight: 300;
+    letter-spacing: 0.05em;
+    line-height: 1.5;
+}
+
+.contents {
+    border-bottom: 3px solid #000;
+}
+
+.card-list {
+    padding: 2rem 0;
+    /* display: flex; */
+    /* flex-wrap: wrap; */
+    /* margin: 0 -1rem; */
+}
+
+.card-item {
+    /* width: 33.33333%; */
+    /* padding: 0 1rem; */
+    margin-bottom: 1rem;
+}
+
+.card-item:hover {
+    transform:translateY(-5px);
+    transition: 1s;
+}
+
+.card-image {
+    height: 0;
+    border-radius: 4px;
+    padding-bottom: 60%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.card-desc {
+    font-size: 1.05rem;
+    font-weight: 300;
+    letter-spacing: 0.03em;
+    text-align: center;
+    color: gray;
+    padding: 0.5em 0;
+}
+
+.footer {
+    color: gray;
+    text-align: center;
+    padding: 2rem;
+}
+
+@media(min-width: 600px){
+
+    .card-list {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0 -1rem;
+    }
+    
+    .card-item {
+        width: 50%;
+        padding: 0 1rem;
+    }
+
+    .card-desc {
+        text-align: left;
+    }
+}
+
+@media(min-width: 900px){
+    .card-item {
+        width: 33.33333%;
+    }
+
+    .wrapper {
+        padding: 0;
+    }
+}
