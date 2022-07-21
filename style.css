@@ -151,15 +151,19 @@ body {
         text-align: center;
     }
     
-    .header-meta span {
+    .header-meta h1 span {
         display: block;
         line-height: 1.2;
+    }
+
+    .header-meta p span {
+        display: inline-block;
     }
     
     .header {
         padding: 3rem 0 2rem;
     }
-    
+
     .wrapper {
         padding: 0 1rem;
     }
